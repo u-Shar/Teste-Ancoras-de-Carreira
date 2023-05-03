@@ -1,0 +1,68 @@
+div#pergunta{
+    padding: 20px;
+    border: 1px solid #666;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+form#formPerguntas{
+    text-align: justify;
+}
+
+form#formPerguntas input#inputNome{
+    margin-bottom: 30px;
+}
+
+button#btnFormPerguntas, button#btnVoltarPerguntas{
+    float: right;
+}
+
+button#btnSalvarResultado{
+    margin-top: 30px;
+    float: left;
+}
+
+button#btnVoltarPerguntas{
+    margin-top: 30px;
+}
+
+div#pergunta select{
+    margin-top: 5px;
+}
+
+div#main{
+    padding: 20px;
+    text-align: center;
+}
+
+div#main .badge{
+    background-color: #840F13;
+}
+
+div#main #instrucoes{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+div#main #instrucoes li{
+    margin-top: 10px;
+}
+
+div#main #resultado{
+    display: none;
+}
+
+div.card{
+    margin-top: 20px;
+}
+
+div.card div.card-header{
+    background-color: #db8b46;
+    color: #fff;
+    font-weight: 600;
+}
+
+div#main h1{
+    margin-bottom: 20px;
+}
