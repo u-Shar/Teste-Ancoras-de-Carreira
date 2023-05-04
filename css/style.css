@@ -66,3 +66,7 @@ div.card div.card-header{
 div#main h1{
     margin-bottom: 20px;
 }
+
+div.card div.accordion-body{
+    text-align: justify;
+}
