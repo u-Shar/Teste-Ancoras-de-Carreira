@@ -1,0 +1,15 @@
+<div id="background"></div>
+<div id="home">
+    <h1 id="title">Âncoras de Carreira</h1>
+    <p>Desenvolvido por Profº Edgar Schein<br>(Harvard e MIT)</p>
+
+    <img src="./img/fei.png" id="imgFEI">
+
+    <button class="btn" id="buttonDescubra">Descubra aqui a sua Âncora de Carreira</button>
+</div>
+
+<script>
+    $("#buttonDescubra").on("click", function(){
+        $("#main").load("/pages/apresentacao.html");
+    });
+</script>

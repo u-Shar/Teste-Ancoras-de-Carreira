@@ -1,0 +1,35 @@
+<div id="background"></div>
+<div id="apresentacao">
+    <h1 id="title">Âncoras de Carreira</h1>
+    
+    <p>
+        Em nosso percurso de carreira,<br>
+        todos nós temos "âncoras", ou seja,<br>
+        certas prioridades e forças motrizes<br>
+        que nos guiam, mesmo que não<br>
+        estejamos totalmente cientes delas.<br>
+        O teste de Âncoras de Carreira,<br>
+        portanto, foi desenhado para nos<br>
+        ajudar a identificar essas âncoras,<br>
+        permitindo que façamos escolhas<br>
+        de carreira mais informadas e<br>
+        alinhadas com quem realmente<br>
+        somos.<br><br>
+        
+        Então, o acha de obter uma<br>
+        compreensão mais profunda de si<br>
+        mesmo e de seu caminho<br>
+        profissional?<br><br>
+
+        <button class="btn" id="buttonInicieTeste">Inicie seu teste aqui!</button>
+
+    </p>
+</div>
+
+<script>
+    $("#buttonInicieTeste").on("click", function(){
+        $("#background").css("height", $('#apresentacao').height());
+        $("#main").load("/pages/instrucoes.html");
+    });
+</script>
+
