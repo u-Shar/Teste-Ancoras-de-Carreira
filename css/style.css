@@ -1,6 +1,8 @@
-#background{
-    background-image: url('../img/background.jpg');
+#backgroundHome{
+    background-image: url('../img/AncorasBg1_Mobile.png');
     background-color: rgba(255, 255, 255, 0.5);
+    background-size: 100% 100%;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh; 
     display: block;
@@ -10,7 +12,21 @@
     z-index: 1;
 }
 
-#background::before {
+#background{
+    background-image: url('../img/AncorasBg2_Mobile.png');
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh; 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* #background::before {
     content: '';
     display: block;
     position: absolute;
@@ -20,17 +36,20 @@
     height: 100%;
     background: #fff;
     opacity: 0.8;
+} */
+
+#logoFEI{
+    width: 40px;
+    margin-bottom: 20px;
+    display: none;
+    position: fixed;
+    z-index: 2;
 }
 
-#index #logoFEI{
-    width: 50px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-#main, #instrucoes, #apresentacao, #home, #pageTeste{
+#conteudo{
     z-index: 2;
     position: relative;
+    text-align: center;
 }
 
 #title{
@@ -126,8 +145,10 @@ div#pergunta select{
 }
 
 div#main{
+    position: relative;
     padding: 20px;
-    text-align: center;
+    padding-top: 50px;
+    z-index: 2;
 }
 
 div#main .badge{
