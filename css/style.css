@@ -1,5 +1,5 @@
-#backgroundHome{
-    background-image: url('../img/AncorasBg1_Mobile.png');
+#backgroundHome,
+#background{
     background-color: rgba(255, 255, 255, 0.5);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -10,21 +10,28 @@
     top: 0;
     left: 0;
     z-index: 1;
+}
+@media (min-width: 1200px) {
+    #backgroundHome{
+        background-image: url('../img/AncorasBg1_Desktop.png');
+    }
+
+    #background{
+        background-image: url('../img/AncorasBg2_Desktop.png');
+    }
 }
 
-#background{
-    background-image: url('../img/AncorasBg2_Mobile.png');
-    background-color: rgba(255, 255, 255, 0.5);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh; 
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+@media (max-width: 1199px) {
+    #backgroundHome{
+        background-image: url('../img/AncorasBg1_Mobile.png');
+    }
+
+    #background{
+        background-image: url('../img/AncorasBg2_Mobile.png');
+    }
 }
+
+
 
 /* #background::before {
     content: '';
