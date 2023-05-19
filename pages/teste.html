@@ -484,7 +484,15 @@
         }else{
             let selectsPontoExtra = $(".pontoExtra");
             selectsPontoExtra.each(function(){
-                $(this).attr("disabled", false);
+                let id = $(this).attr("id").match(/\d+/g);
+
+                if($("#pergunta"+id).val() != null){
+                    if($("#pergunta"+id).val() == 5 || $("#pergunta"+id).val() == 6){
+                        $(this).attr("disabled", false);
+                    }
+                }else{
+                    $(this).attr("disabled", false);
+                }
             })
         }
     }
@@ -770,6 +778,7 @@
 
     $(".selectResposta").on("change", function(){
         let val = $(this).val();
+
         if(val != 5 && val != 6){
             $("#ponto-extra-"+$(this).attr("id")).val("0");
             $("#ponto-extra-"+$(this).attr("id")).attr("disabled", true);
